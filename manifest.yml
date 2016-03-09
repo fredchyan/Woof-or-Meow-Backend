@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Woof or Meow
+  command: node app.js
+  host: woof-or-meow
+  disk_quota: 1024M
+  services:
+  - Woof or Meow-AdvancedMobileAccess
+  - Woof or Meow-imfpush
+  - Woof or Meow-cloudantNoSQLDB
+  - Visual Recognition-wf
